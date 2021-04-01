@@ -36,10 +36,10 @@ def predict():
 
     # output = round(prediction[0], 2)
     if prediction == 1:
-        output = "Grant 100 percent Loan"
+        output = "Loan accepted"
     
     else:
-        output = "Charge off entire loan"
+        output = "Loan rejected"
 
     return render_template('index.html', prediction_text='{}'.format(output))
 
